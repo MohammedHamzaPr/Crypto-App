@@ -43,7 +43,7 @@ def Select():
     filepath.insert(0,fileName.split('/')[size-1])
     global plinecode
     try:
-        plinecode = open(fileName,'r').read()
+        plinecode = open(fileName,'r',encoding='utf-8').read()
     except:
         pass
     global name
